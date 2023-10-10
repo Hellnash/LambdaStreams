@@ -20,8 +20,12 @@ public class Main {
         FuncInter lambdaObject = () -> System.out.println("Implementing using lambda expression");
         lambdaObject.onlyOneMethod();
 
+        //sum operation through lambda expression
         SumInter sumInter = (a,b) -> a + b;
+        //The same can be performed using a static method of integer class
+        SumInter sum = Integer::sum;
+                      //Class::Static Method -> function reference
         System.out.println(sumInter.sum(2,6));
-        System.out.println(sumInter.sum(89,423));
+        System.out.println(sum.sum(89,423));
     }
 }
