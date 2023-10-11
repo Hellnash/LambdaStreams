@@ -16,6 +16,7 @@ public class StreamMethods {
         //collect method will collect all the elements after filtering and store it to a list
 
         //map(Function -> a general method which returns any value not boolean)
+        //peek(Funtion) -> unlike map it automatically returns the stream withou any return statement
         List<Integer> integers = List.of(34, 8, 97, 101, 234);
         List<Integer> squares = integers.stream().map(i -> i * i).toList();
         System.out.println("Squares of Integers "+integers+" :: "+squares);
