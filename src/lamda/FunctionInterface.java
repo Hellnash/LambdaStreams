@@ -1,7 +1,7 @@
 package lamda;
 
 @FunctionalInterface
-public interface FuncInter {
+public interface FunctionInterface {
     void onlyOneMethod();
 
     //use it by implementing in a class and creating its object

@@ -34,5 +34,8 @@ public class StreamMethods {
         System.out.println("Minimum Value of the integers "+minimum);
         Integer maximum = integers.stream().max(Integer::compareTo).get();
         System.out.println("Maximum Value of the integers "+maximum);
+
+        //peek
+        //reduce
     }
 }
